@@ -113,9 +113,6 @@ When invoking the function, you should now see log messages from the example ext
 	2021-02-16T22:10:07.843+02:00	EXTENSION Name: python-extension-log-eventpayload-to-s3 State: Ready Events: [INVOKE,SHUTDOWN]
 	2021-02-16T22:10:07.856+02:00	[python-extension-log-eventpayload-to-s3] Received event: {"eventType": "INVOKE", "deadlineMs": 1613506237843, "requestId": "ea4764b2-363c-44b0-a47d-357fe94e8323", "invokedFunctionArn": "arn:aws:lambda:us-east-1:564727993351:function:newHelloWorld", "tracing": {"type": "X-Amzn-Trace-Id", "value": "Root=1-602c269e-0d2fc47e6a2da3d448219e51;Parent=3c06727859bb8f45;Sampled=0"}}
 	2021-02-16T22:10:07.856+02:00	context requestId ea4764b2-363c-44b0-a47d-357fe94e8323
-	2021-02-16T22:10:07.856+02:00	value1 = value1
-	2021-02-16T22:10:07.856+02:00	value2 = value2
-	2021-02-16T22:10:07.856+02:00	value3 = value3
 	2021-02-16T22:10:10.297+02:00	[python-extension-log-eventpayload-to-s3] /tmp/ea4764b2-363c-44b0-a47d-357fe94e8323
 	2021-02-16T22:10:10.297+02:00	[python-extension-log-eventpayload-to-s3] Received event body: {"key1": "value1", "key2": "value2", "key3": "value3"}
 	2021-02-16T22:10:10.297+02:00	[python-extension-log-eventpayload-to-s3] Waiting for event...
