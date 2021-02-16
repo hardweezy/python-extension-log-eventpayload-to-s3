@@ -3,9 +3,9 @@ This demo does not include a Lambda function. Only an extension that needs to be
 
 > Note: This extension requires the Python 3 runtime to be present in the Lambda execution environment of your function.
 
-The extension uses the Extensions API to register for INVOKE and SHUTDOWN events.
+> Note: This extension is not to be used in a production environment, this is only a demo.
 
-This example needs a S3_BUCKET_NAME environment variable in the calling Lambda function. A Lambda function needs to be configured with an environment variable "S3_BUCKET_NAME" to specify the S3 bucket name. Lambda writes the event payload to the /tmp directory. The extension reads from the directory and copies the file to the S3 bucket. 
+This example needs a S3_BUCKET_NAME environment variable in the calling Lambda function. A Lambda function needs to be configured with an environment variable "S3_BUCKET_NAME" to specify the S3 bucket name. Lambda writes the event payload to the /tmp directory. The extension reads from the directory and copies the file to the S3 bucket. The extension uses the Extensions API to register for INVOKE and SHUTDOWN events.
 
 The Lambda function needs to have an execution role with a policy that is similar to this:
 ```
